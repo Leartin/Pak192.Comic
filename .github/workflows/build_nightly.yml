@@ -29,8 +29,8 @@ jobs:
           cd simutrans/trunk/makeobj
           echo $PWD
           make
-          echo $PWD
           cd ..
+          dir
           cd ..
           cd ..
           cp -v simutrans/trunk/build/default/makeobj .
