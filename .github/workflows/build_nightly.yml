@@ -33,9 +33,6 @@ jobs:
           cp -r makeobj ~
     - name: make pak192
       run: |
-        cd ~
-        ls
-        cd ./runner/work/Pak192.Comic/Pak192.Comic
         ls 
         sh COMPILE.sh
     - name: Rename result
