@@ -36,7 +36,6 @@ jobs:
         bash COMPILE.sh
     - name: Rename result
       run: |
-        cd ~
         zip -r pak192-nightly.zip compiled
 
     - name: Update binaries of Nightly Release
