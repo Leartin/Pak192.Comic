@@ -35,9 +35,9 @@ jobs:
       run: |
         cd ~
         ls
-        cd ..
+        cd ./runner/work/Pak192.Comic/Pak192.Comic
         ls 
-        sh ./COMPILE.sh
+        sh COMPILE.sh
     - name: Rename result
       run: |
         cd ~
