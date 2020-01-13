@@ -30,9 +30,10 @@ jobs:
           echo $PWD
           make
           cd ..
-          cd build/default
-          cp -r -v makeobj ../../../../
-          cd ../../../..
+          cd build
+          dir
+          cp -r -v makeobj ../../../
+          cd ../../..
           dir
           
     - name: make pak192
