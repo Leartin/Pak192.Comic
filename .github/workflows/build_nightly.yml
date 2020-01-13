@@ -26,12 +26,12 @@ jobs:
         cat config.default >>/dev/stderr
     - name: make makeobj
       run: |
-          dir=$(pwd)
           cd simutrans/trunk/makeobj
           make
           cd ..
-          cd build/default
-          cp -r makeobj $dir
+          cd ..
+          cd ..
+          cp -r simutrans/trunk/build/default/makeobj .
     - name: make pak192
       run: |
         bash COMPILE.sh
