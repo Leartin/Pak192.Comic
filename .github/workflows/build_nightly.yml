@@ -27,7 +27,9 @@ jobs:
     - name: make makeobj
       run: |
           cd simutrans/trunk/makeobj
+          echo $PWD
           make
+          echo $PWD
           cd ..
           cd ..
           cd ..
