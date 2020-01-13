@@ -34,6 +34,7 @@ jobs:
     - name: make pak192
       run: |
         cd ~
+        ls ~
         sh ./COMPILE.sh
     - name: Rename result
       run: |
