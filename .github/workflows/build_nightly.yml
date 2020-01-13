@@ -31,7 +31,9 @@ jobs:
           make
           cd ..
           cd build/default
-          cp -v makeobj ../../../../
+          cp -r -v makeobj ../../../../
+          cd ../../../..
+          dir
           
     - name: make pak192
       run: |
