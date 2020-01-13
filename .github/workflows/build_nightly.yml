@@ -33,8 +33,7 @@ jobs:
           cp -r makeobj ~
     - name: make pak192
       run: |
-        ls 
-        sh COMPILE.sh
+        bash COMPILE.sh
     - name: Rename result
       run: |
         cd ~
