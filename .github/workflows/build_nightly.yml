@@ -30,7 +30,16 @@ jobs:
           echo $PWD
           make
           cd ..
+          echo $PWD
           dir
+          cd build
+          echo $PWD
+          dir
+          cd default
+          echo $PWD
+          dir
+          cd ..
+          cd ..
           cd ..
           cd ..
           cp -v simutrans/trunk/build/default/makeobj .
