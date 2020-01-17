@@ -19,9 +19,9 @@ compile() {
 		if [ -d ${x} ]
 		then
            ./makeobj pak$1 test.pak $x/theme.dat
-	   mv test.pak trunk/$x.pak
+	   mv -v test.pak trunk/$x.pak
 		else
-			cp -r $x trunk
+			cp -r $x trunk/theme/
 		fi
 	done
 }
@@ -46,7 +46,7 @@ dir
 cd trunk
 dir
 cd ..
-mv ./trunk/theme /themes
+mv -v ./trunk/theme /themes
 zip themes.zip themes
 echo dir
 
