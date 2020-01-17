@@ -118,7 +118,7 @@ compile() {
 
 echo -n 'Checking for makeobj... '
 
-if [ ! -f 'makeobj-makeobj.o' ]; then
+if [ ! -f 'makeobj' ]; then
     echo 'ERROR: makeobj not found in root folder.'
     exit 1
 fi
