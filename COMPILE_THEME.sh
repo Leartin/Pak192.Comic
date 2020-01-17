@@ -43,7 +43,10 @@ cd ..
 
 compile '64' 'themes' 'theme/*'
 dir
-mv /trunk/theme /themes
+cd trunk
+dir
+cd ..
+mv ./trunk/theme /themes
 zip themes.zip themes
 echo dir
 
