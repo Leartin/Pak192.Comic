@@ -39,6 +39,7 @@ mkdir trunk
 cd trunk
 mkdir theme
 cd ..
+mkdir themes
 
 
 compile '64' 'themes' 'theme/*'
