@@ -31,22 +31,13 @@ jobs:
           make
           mv makeobj ../../..
           cd ../../..
-          rm -rf simutrans
-
-          
-    - name: make pak192
-      run: |
-        bash COMPILE.sh
-    - name: Rename result
-      run: |
-        mv compiled pak192.comic-nightly
-        zip -r pak192-nightly.zip pak192.comic-nightly
+          zip -r makeobj.zip makeobj
 
     - name: Update binaries of Nightly Release
       uses: svenstaro/upload-release-action@v1-release
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: ./pak192-nightly.zip
-        asset_name: pak192-nightly.zip
+        file: ./makeobj.zip
+        asset_name: makeobj.zip
         tag: Nightly
         overwrite: true
