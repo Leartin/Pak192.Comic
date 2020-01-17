@@ -29,12 +29,10 @@ jobs:
           cd simutrans/trunk/makeobj
           echo $PWD
           make
-          cd ..
-          cd build/default/makeobj
-          dir
-          cp -r -v * ../../../../..
-          cd ../../../../..
-          dir
+          mv makeobj ../../..
+          cd ../../..
+          rm -rf simutrans
+
           
     - name: make pak192
       run: |
