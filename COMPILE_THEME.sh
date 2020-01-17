@@ -18,10 +18,10 @@ compile() {
 	for x in $3; do
 		if [ -d ${x} ]
 		then
-			echo ./makeobj pak$1 ./trunk/$x.pak ./$x/theme.dat
-           ./makeobj pak$1 ./trunk/$x.pak ./$x/theme.dat
+			echo ./makeobj pak$1 trunk/$x.pak $x/theme.dat
+           ./makeobj pak$1 trunk/$x.pak $x/theme.dat
 		else
-			cp -r .$x trunk
+			cp -r $x trunk
 		fi
 	done
 }
