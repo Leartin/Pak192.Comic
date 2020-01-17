@@ -19,7 +19,7 @@ compile() {
 		if [ -d ${x} ]
 		then
            ./makeobj pak$1 test.pak $x/theme.dat
-	   mv test.pak trunk/$x
+	   mv test.pak trunk/$x.pak
 		else
 			cp -r $x trunk
 		fi
