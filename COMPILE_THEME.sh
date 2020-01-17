@@ -19,7 +19,7 @@ compile() {
 		if [ -d ${x} ]
 		then
 			echo ./makeobj pak$1 trunk/$x.pak $x/theme.dat
-           ./makeobj pak$1 trunk/$x.pak $x/theme.dat
+           ./makeobj pak$1 test.pak $x/theme.dat
 		else
 			cp -r $x trunk
 		fi
