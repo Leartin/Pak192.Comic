@@ -35,6 +35,8 @@ fi
 
 echo -e 'OK\n'
 
+mkdir trunk/theme
+
 compile '64' 'themes' 'theme/*'
 echo dir
 mv trunk/theme themes
