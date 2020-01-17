@@ -36,9 +36,10 @@ fi
 echo -e 'OK\n'
 
 compile '64' 'themes' 'theme/*'
-
+echo dir
 mv trunk/theme themes
 zip themes.zip themes
+echo dir
 
 echo '======================================================'
 echo 'theme complete!'
