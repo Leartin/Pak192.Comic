@@ -19,7 +19,7 @@ mkdir themes
 ./makeobj pak64 themes/pak192comic.pak /theme/pak192comic/theme.dat
 ./makeobj pak64 themes/pak192comicxxl.pak /theme/pak192comicxxl/theme.dat
 cp -v ./theme/*.tab ./themes/ 
-zip themes.zip themes
+zip -r themes.zip themes
 
 
 echo '======================================================'
