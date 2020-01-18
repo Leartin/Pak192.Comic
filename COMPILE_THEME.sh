@@ -16,8 +16,8 @@ fi
 echo -e 'OK\n'
 
 mkdir themes
-./makeobj pak64 themes/menu.pak192comic.pak /theme/pak192comic/theme.dat
-./makeobj pak64 themes/menu.pak192comicxxl.pak /theme/pak192comicxxl/theme.dat
+./makeobj pak64 themes/menu.pak192comic.pak theme/pak192comic/theme.dat
+./makeobj pak64 themes/menu.pak192comicxxl.pak theme/pak192comicxxl/theme.dat
 cp -v ./theme/*.tab ./themes/ 
 zip -r themes.zip themes
 
